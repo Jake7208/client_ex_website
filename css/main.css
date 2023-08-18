@@ -108,6 +108,43 @@ body::before
     margin-top: 2rem;
 }
 
+.filled,
+.outlined
+{
+    padding: .8rem 2rem;
+    border-radius: 2rem;
+    color: var(--color-text);
+    font-size: 1rem;
+}
+
+.filled
+{
+    border: none;
+    background: var(--primary-color);
+    cursor: pointer;
+}
+
+.outlined
+{
+    border: 2px solid var(--primary-color);
+    background: none;
+    cursor: pointer;
+}
+
+.outlined:hover,
+.filled:hover
+{
+    transition: .3s ease-in;
+    background: var(--primary-color);
+    color: var(--color-bg);
+}
+
+video 
+{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.469), 0 6px 20px 0 rgba(0, 0, 0, 0.405);
+}
+
 .hero-right 
 {
     display: flex;
