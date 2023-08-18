@@ -1,3 +1,9 @@
+/*
+*Fonts
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 /* 
 * Custom CSS Colors 
 */
@@ -8,7 +14,7 @@
     --color-foreground: #191919;
     --color-text: #FFFFFF;
     --color-subtext: #B8B8B8;
-    --primary-color: #4F82EE;
+    --primary-color: #8FB3FF;
 
     --background-grid: url('../BackgroundVec.svg') no-repeat center;
     --background : var(--color-bg);
@@ -20,7 +26,7 @@
 
 .lightMode 
 {
-    --color-bg: #FFFFFF;
+    --color-bg: #f0f4ff;
     --color-foreground: #EBEBEB;
     --color-text: #000000;
     --color-subtext: #191919;
@@ -35,6 +41,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 /* main Styling */
@@ -62,4 +69,51 @@ body::before
     background: var(--background-grid);
     z-index: -1;
 }
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-left 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+}
+
+.hero-left h1
+{
+    font-size: 5rem;
+    color: var(--color-text);
+}
+
+.hero-left p
+{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: var(--color-subtext);
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.hero-right 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
