@@ -31,7 +31,6 @@
     --color-text: #000000;
     --color-subtext: #191919;
     --primary-color: #4F82EE;
-
     --background-grid: url('../darkModeBackground.svg') no-repeat center;
     --background : var(--color-bg);
 }
